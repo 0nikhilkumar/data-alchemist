@@ -1,0 +1,11 @@
+ClientID,ClientName,PriorityLevel,RequestedTaskIDs,GroupTag,AttributesJSON
+C001,Acme Corp,5,"T001,T003,T005",enterprise,"{""budget"": 100000, ""deadline"": ""2024-03-15""}"
+C002,Beta Industries,4,"T002,T004",standard,"{""budget"": 50000, ""urgent"": true}"
+C003,Gamma Solutions,3,"T006,T007,T008",standard,"{""budget"": 75000, ""flexible"": true}"
+C004,Delta Enterprises,5,"T001,T009,T010",enterprise,"{""budget"": 120000, ""priority"": ""high""}"
+C005,Epsilon Ltd,2,"T011,T012",basic,"{""budget"": 25000, ""timeline"": ""Q2""}"
+C006,Zeta Tech,4,"T013,T014,T015",standard,"{""budget"": 80000, ""skills_required"": [""AI"", ""ML""]}"
+C007,Eta Consulting,3,"T005,T016",standard,"{""budget"": 60000, ""location"": ""remote""}"
+C008,Theta Corp,5,"T017,T018,T019",enterprise,"{""budget"": 150000, ""complexity"": ""high""}"
+C009,Iota Services,1,"T020",basic,"{""budget"": 20000, ""simple"": true}"
+C010,Kappa Group,4,"T002,T021,T022",standard,"{""budget"": 90000, ""multi_phase"": true}"

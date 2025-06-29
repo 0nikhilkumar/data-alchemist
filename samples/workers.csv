@@ -1,0 +1,16 @@
+WorkerID,WorkerName,Skills,AvailableSlots,MaxLoadPerPhase,WorkerGroup,QualificationLevel
+W001,Alice Johnson,"JavaScript,React,Node.js","[1,2,3,4,5]",3,frontend,4
+W002,Bob Smith,"Python,Django,PostgreSQL","[1,3,5]",2,backend,5
+W003,Carol Davis,"Java,Spring,MySQL","[2,4,6]",3,backend,3
+W004,David Wilson,"React,TypeScript,CSS","[1,2,4,5]",2,frontend,4
+W005,Eva Brown,"Python,AI,ML,TensorFlow","[1,2,3]",2,ai,5
+W006,Frank Miller,"PHP,Laravel,Redis","[3,4,5,6]",3,backend,3
+W007,Grace Lee,"Vue.js,JavaScript,SCSS","[1,4,5]",2,frontend,4
+W008,Henry Taylor,"Go,Docker,Kubernetes","[2,3,4,5,6]",4,devops,5
+W009,Ivy Chen,"C#,.NET,SQL Server","[1,2,5,6]",3,backend,4
+W010,Jack Brown,"React Native,Mobile,iOS","[1,3,4]",2,mobile,3
+W011,Kelly White,"UX,UI,Figma,Design","[2,3,4,5]",2,design,4
+W012,Liam Garcia,"Data Science,R,Statistics","[1,2,3,4]",3,analytics,5
+W013,Maya Patel,"QA,Testing,Selenium","[1,2,3,4,5,6]",3,qa,4
+W014,Noah Kim,"DevOps,AWS,Terraform","[2,4,5,6]",3,devops,5
+W015,Olivia Rodriguez,"Product Management,Agile","[1,2,3,4,5]",2,management,4
