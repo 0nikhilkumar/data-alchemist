@@ -62,6 +62,7 @@ export function ExportPanel() {
     try {
       const timestamp = new Date().toISOString().split('T')[0];
       
+      // Export data files
       if (exportOptions.clients && clients.length > 0) {
         exportToCSV(clients, `clients-cleaned-${timestamp}.csv`);
       }
@@ -74,6 +75,7 @@ export function ExportPanel() {
         exportToCSV(tasks, `tasks-cleaned-${timestamp}.csv`);
       }
       
+      // Export configuration files
       if (exportOptions.rules) {
         const rulesConfig = {
           rules: businessRules.filter(rule => rule.enabled),
@@ -168,6 +170,7 @@ export function ExportPanel() {
       )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Data Files */}
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
@@ -226,6 +229,7 @@ export function ExportPanel() {
           </CardContent>
         </Card>
 
+        {/* Configuration Files */}
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
@@ -285,6 +289,7 @@ export function ExportPanel() {
         </Card>
       </div>
 
+      {/* Export Summary */}
       <Card className="border-emerald-200 bg-emerald-50">
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">

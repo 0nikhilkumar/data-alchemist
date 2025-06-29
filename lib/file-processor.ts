@@ -1,6 +1,6 @@
-import Papa from 'papaparse';
 import * as XLSX from 'xlsx';
-import { FileUploadResult } from './types';
+import Papa from 'papaparse';
+import { Client, Worker, Task, FileUploadResult } from './types';
 
 export class FileProcessor {
   async processFile(file: File, type: 'clients' | 'workers' | 'tasks'): Promise<FileUploadResult> {
@@ -274,7 +274,7 @@ export class FileProcessor {
     }
   }
 
-  private validateRowData(row: any, type: string, rowNumber: number): string[] {
+  private validateRowData(row: any, type: 'clients' | 'workers' | 'tasks', rowNumber: number): string[] {
     const errors: string[] = [];
     
     // Basic validation

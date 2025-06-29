@@ -208,7 +208,13 @@ function FileUploadCard({ type, status, progress, errors, onDrop, onFileSelect }
 
         {status === 'processing' && (
           <div className="mt-4">
-            <Progress value={progress} className="w-full" />
+            {/* <Progress value={progress} className="w-full" /> */}
+            <div className="w-full bg-gray-200 rounded-full h-2">
+              <div 
+                className="bg-blue-600 h-2 rounded-full transition-all" 
+                style={{ width: `${progress}%` }}
+              ></div>
+            </div>
             <p className="text-sm text-gray-600 mt-2">Processing file... {Math.round(progress)}%</p>
           </div>
         )}

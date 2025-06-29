@@ -352,7 +352,7 @@ export class AIEngine {
 
     return data.filter(item => {
       // Create searchable text from all relevant fields
-      const searchableFields = [];
+      const searchableFields: string[] = [];
       
       // Add specific fields based on item type
       if (item.ClientName) searchableFields.push(item.ClientName.toLowerCase());
@@ -423,7 +423,7 @@ export class AIEngine {
       const phaseRangeMatch = description.match(/phase[s]?\s+(\d+)(?:\s*[-–]\s*(\d+))?/i);
       const phaseListMatch = description.match(/phase[s]?\s+\[([0-9,\s]+)\]/i);
       
-      let phases = [];
+      let phases: number[] = [];
       if (phaseRangeMatch) {
         const start = parseInt(phaseRangeMatch[1]);
         const end = phaseRangeMatch[2] ? parseInt(phaseRangeMatch[2]) : start;
@@ -449,7 +449,7 @@ export class AIEngine {
   }
 
   static async suggestDataCorrections(data: any[], validationResults: any[]): Promise<any[]> {
-    const suggestions = [];
+    const suggestions: any[] = [];
 
     // Create a map of entities for quick lookup
     const entityMap = new Map();
@@ -572,7 +572,7 @@ export class AIEngine {
   }
 
   static async recommendBusinessRules(clients: any[], workers: any[], tasks: any[]): Promise<any[]> {
-    const recommendations = [];
+    const recommendations: any[] = [];
 
     // Analyze task patterns for co-run suggestions
     const taskCategories = new Map<string, string[]>();
